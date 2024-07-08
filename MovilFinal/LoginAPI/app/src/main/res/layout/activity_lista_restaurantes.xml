@@ -1,0 +1,20 @@
+<!-- res/layout/activity_lista_restaurantes.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <SearchView
+        android:id="@+id/svSearchRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar restaurantes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
